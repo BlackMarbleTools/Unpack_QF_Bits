@@ -1,7 +1,7 @@
 """
 Created on Fri Mar 17 10:51:55 2023
 
-Unpack QF_Cloud_Mask layer for a given bit range from the NASA's Black Marble VNP46A1/A2 Products.
+Unpack QF Mask layer for a given bit range from the NASA's Black Marble VNP46A1/A2 Products.
 
 @author: Ranjay M. Shrestha, NASA's Black Marble Science Team, NASA Goddard Space Flight Center
 """
@@ -81,11 +81,11 @@ inputImage = "./VNP46A2.A2021003.h09v05.001.2021103041024.h5"
 
 outputCloud = "./VNP46A2.A2021003.h09v05.001.2021103041024_Cloud_Mask_V2.tif"
 
-temp = "./tempCloud.tif"
+temp = "./tempMaskFile.tif"
 
 ## Open HDF file
 #Specify Band nuber you want to unpack bits#
-#For QF_Cloud_Mask in VNP46A1, band= 11 and in VNP46A2, band = 5
+#For QF_Cloud_Mask in VNP46A1, band = 11 and in VNP46A2, band = 5
 #Refer to Black Marble user guide for full description##
 
 band = 5
